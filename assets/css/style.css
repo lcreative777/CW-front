@@ -6,10 +6,6 @@
 ================================= */	
 
 
-
-/*===============================================*/
-/* 01. GENERAL			 						 */
-/*===============================================*/
 body{
 	font-family: 'Josefin Sans', sans-serif;
     color:#000;
@@ -32,16 +28,11 @@ body{
 
 
 
-h1,h2,h3,h4,h5,h6{
-	font-family: 'Josefin Sans', sans-serif;
-	color: #f7313e;
-}
+h1,h2,h3,h4,h5,h6{ font-family: 'Josefin Sans', sans-serif; }
 
 
 
-
-h1, h2, h3,
-.h1, .h2, .h3{
+h1, h2, h3, .h1, .h2, .h3{
 	 margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -84,6 +75,7 @@ h4.inline, h5.inline, h6.inline{
 	display:inline;
 	vertical-align:middle; 
 }
+
 .title { text-transform: uppercase; font-weight: 300; letter-spacing: 1px; }
 
 p{
@@ -1245,6 +1237,12 @@ footer, #wrapper:after {
 }
 
 
+ul.tdet { list-style: none; margin: 0px 0px; padding: 22px 0px; text-align: center; }
+ul.tdet li { width: 31.999%; display: inline-block; text-align: center; font-size: 18px; }
+ul.tdet li i { color: #999; }
+
+
+
 
 
 /* 07.2.3 Icon Title Wrapper					 */
@@ -2303,7 +2301,7 @@ label.selec {position:relative; }
 
 
 
-select#sample { min-width: 250px; padding-left: 30px;  }
+select#sample { min-width: 213px; padding-left: 30px;  }
 
 form.pay-form label.selec, form.form-normal label.selec { 
     display: block;
@@ -2819,7 +2817,7 @@ section#continue input.submit { float: right; padding: 0px 50px; cursor: pointer
 }
 
 
-#guest_view1 {
+#guest_view1, #guest_view2, #guest_view3  {
 	min-height: 850px;
 	position: relative;
 	background-image: url('/assets/images/bg/guestview1_bg.jpg'); background-position: center top; background-size: contain;
@@ -2827,6 +2825,12 @@ section#continue input.submit { float: right; padding: 0px 50px; cursor: pointer
 	background-attachment:fixed;
 	margin-bottom: -50px;
 }
+
+#guest_view2 { background-image: url('/assets/images/bg/landing_2.jpg'); background-size: cover;  }
+
+#guest_view3 { background-image: url('/assets/images/bg/landing_3.jpg');  background-size: cover; }
+
+
 #payment { background: #f5f5f5; background-color: #f5f5f5; min-height: 650px; padding: 10px 0px 55px; }
 #content.payment { background: #f5f5f5; background-color: #f5f5f5;  }
 
@@ -3231,7 +3235,9 @@ h2.gdate {
 .affix .section-box.top, .affix-top .section-box.top {
     position: absolute;
     width: 700px;
-}	
+	margin-top: 28px;
+}
+
 
 .slide-overlay{
 	height: 155px;
@@ -3596,6 +3602,18 @@ margin: 25px auto; z-index:1000;
 }
 
 
+/* ----------------------------------------------*/
+/* Registry List					 */
+/* ----------------------------------------------*/
+
+div.g-selec {
+    width: 20%;
+    padding: 8px 0px 0px 0px;
+    margin-right: 2%;
+}
+
+ul.reg-list li .desc {  width: 38%; }
+
 
 
 /* ----------------------------------------------*/
@@ -3665,6 +3683,7 @@ form.search input {
 
 @media screen and (max-width: 768px) {	
 
+.mhide { display: none; }
 .slide-overlay{
 	height: 155px;
 	
@@ -3732,7 +3751,13 @@ form.search input {
     margin-top: 0px;
     z-index: -1;
 }
-.box-menu { display: none; }
+
+
+.box-head h2 {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    font-size: 22px;
+}
 
 /*===============================================*/
 /* 11. FORM										 */
@@ -3778,10 +3803,106 @@ form.search input {
 .b-content { padding: 30px 30px; font-size: 22px; }
 
 
+.edit a {
+    background-color: #bd1621;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 10px;
+    float: right;
+}
+.edit span.plus {
+   font-size: 43px;
+    line-height: 30px;
+    padding: 0px 8px;
+    font-weight: 100;
+    margin-top: -2px;
+}
+.edit a { position: relative; }
+.edit a i {     
+    padding-left: 8px;
+    padding-top: 0px;
+    margin-top: 1px;
+    line-height: 35px;
+    float: left; }
+
+
+}
+
+
+@media screen and (max-width: 698px)  {	
+
+/* ----------------------------------------------*/
+/* Registry List					 */
+/* ----------------------------------------------*/
+
+ul.reg-list li img {
+    float: left;
+    display: block;
+    width: 12%;
+    min-width: 70px;
+    height: 100%;
+    margin: 0px 0px;
+    margin-left: 4%;
+}
+
+ul.reg-list li br { height: 0px; margin: 0px 0px; padding: 0px 0px; }
+
+div.g-selec {
+	float: right;
+    width: 84%;
+    padding: 0px 0px 0px 0px;
+    margin: 0 4% 0 12%;
+	text-align: right;
+}
+
+ul.reg-list li .l-edit {
+    width: 90%;
+    text-align: center;
+    line-height: 22px;
+    float: none;
+    text-align: right;
+	margin-bottom: -22px;
+}
+
+
+
+.section-box .g-select label, ul.reg-list label { display: inline; margin-left: 15px; }
+ul.reg-listui-sortable li {
+    padding: 28px 0px 10px;
+
+}
+
+ul.reg-listui-sortable li {
+    padding: 22px 0px 22px;
+
+}
+ul.reg-list li .desc {  width: 75%; margin-bottom: -45px; margin-top: -15px;}
+ul.reg-list li .price { margin-top: -15px;     margin-right: 3%;  margin-left: 3%; width: 75%;    }
+
+ul.reg-list.ui-sortable li .desc {  width: 70%; margin-bottom: -45px; margin-top: -15px;}
+ul.reg-list.ui-sortable li .price { margin-top: -15px;     margin-right: 3%;  margin-left: 3%; width: 70%;    }
+
+
+ul.reg-list li .price {   font-size: 20px; }
+ul.reg-list li .price p span { font-size: 18px; }
+ul.reg-list li .price p { font-size: 15px; }
+
+
+ul.reg-list li .desc p { display: none
+
+}
+
 
 }
 
 @media screen and (max-width: 625px)  {	
+
+ul.tdet li { width: 48.999%;  }
+ul.tdet li.last { width: 99.999%; padding: 10px 0px; } 
 
 .slide-image {
     background-size: 295% !important;
@@ -3799,7 +3920,7 @@ ul.menu-3col li {
     font-weight: 600;
     color: #f7313e;
     padding: 12px 0px;
-	  border-bottom: 1px solid #f7313e;
+	  border-bottom: 1px solid #efefef;
 }
 
 ul.menu-3col li a {
@@ -3819,6 +3940,62 @@ ul.menu-3col li a {
 
 
 }
+
+@media screen and (max-width: 536px)  {	
+
+
+h1, .h1 {
+    font-size: 33px;
+}
+
+ul.reg-list li .desc {  margin-right: 5%;  margin-left: 5%; width: 60%; margin-bottom: -45px; margin-top: -15px;}
+ul.reg-list li .price { margin-top: -15px;     margin-right: 5%;  margin-left: 5%; width: 60%;  line-height: 18px;   }
+
+ul.reg-list li img {
+ 
+    margin-left: 7%;
+}
+
+div.g-selec {
+    float: right;
+    width: 84%;
+    padding: 10px 0px 0px 0px;
+    margin: 0 5% 0 11%;
+    text-align: right;
+}
+
+div.g-selec select {
+   
+    background-position: 90% center;
+
+    max-width: 300px;
+    width: 73%;
+}
+
+ul.reg-list li span.icon { width: 15%; text-align: center; margin-left: 3%; }
+ul#sortable li img {
+    float: left;
+    display: block;
+    width: 30%;
+    max-width: 95px;
+    height: auto;
+    margin: 0px 0px;
+    margin-left: 0%;
+}
+ul.reg-list.ui-sortable li .desc {  width: 43%; margin-bottom: -45px; margin-top: -15px; }
+ul.reg-list.ui-sortable li .desc h4 { font-size: 20px; }
+ul.reg-list.ui-sortable li .price { margin-top: -15px;     margin-right: 3%;  margin-left: 5%; width: 41%;}
+ul.reg-list.ui-sortable li .l-edit { width: 43%; margin-right: 3%;  margin-left: 51%; text-align: left; }
+
+ul.col-3-up li {
+    width: 100%;
+    display: block;
+}
+
+
+
+}
+
 
 
 @media screen and (max-width: 480px)  {	
