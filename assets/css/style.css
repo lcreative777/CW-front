@@ -155,9 +155,6 @@ hr { margin: 50px 0px; border-bottom: 1px solid #c2c2c2; height: 51px;  float: n
 
 
 
-
-
-
 .close {
   position: relative;
   display: inline-block;
@@ -262,9 +259,7 @@ small a:hover {
 /*===============================================*/
 
 
-#nav-header{  z-index:1000; height: 100px;
-	
-}
+#nav-header{  z-index:1000; height: 100px; }
 
 
 #nav-bar{
@@ -277,9 +272,6 @@ small a:hover {
 
 #nav-bar.white  { background-color: #fff; }
 
-/* ----------------------------------------------*/
-/* 02.1 Width & Color 							 */
-/* ----------------------------------------------*/
 
 
 
@@ -373,9 +365,12 @@ small a:hover {
 
 
 
+/*===============================================*/
+/* 03. NAV MENU	 	 							 */
+/*===============================================*/
 
-/* 02.2.3 Nav Right 							 */
-/* ----------------------------------------------*/
+
+
 #nav-bar.nav-right .logo-wrapper{
 	float:left;
 	width: 30%;
@@ -390,13 +385,6 @@ small a:hover {
 }
 
 
-/*===============================================*/
-/* 03. NAV MENU	 	 							 */
-/*===============================================*/
-
-/* ----------------------------------------------*/
-/* 03.1 Parent Menu								 */
-/* ----------------------------------------------*/
 #nav-menu > li{
 	position:relative;
 	display:inline;	
@@ -539,11 +527,6 @@ margin-bottom: 10px;
 }
 
 
-
-
-/*===============================================*/
-/* 04. SIDE NAV BAR		 						 */
-/*===============================================*/
 
 /* ----------------------------------------------*/
 /* 04.1 Menuicon Bar Width & Position 			 */
@@ -877,7 +860,7 @@ margin-bottom: 10px;
 /* 06.2.1 Main Slider Flexslider Control Nav & Paging */
 /* ----------------------------------------------*/
 #main-slider .flex-control-nav, .flex-control-paging{
-	 background-color:transparent; !important;
+	 background-color:transparent !important;
 	 margin:0; padding:0;
 	 position:absolute;
 	 bottom:0;
@@ -1005,19 +988,10 @@ margin-bottom: 10px;
 	display:block; 
 	width:inherit; 
 	height:inherit; 
-
-
-
-background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 63%, rgba(255,255,255,0.85) 100%); /* FF3.6-15 */
-
-background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 63%,rgba(255,255,255,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
-
-background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 63%,rgba(255,255,255,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d9ffffff',GradientType=0 ); /* IE6-9 */
-
-
-
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 63%, rgba(255,255,255,0.85) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 63%,rgba(255,255,255,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 63%,rgba(255,255,255,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d9ffffff',GradientType=0 ); /* IE6-9 */
 	opacity:0.9;
 	-webkit-transform: translateZ(0);
 }
@@ -1219,15 +1193,7 @@ footer, #wrapper:after {
 }
 
 
-/* ----------------------------------------------*/
-/* 07.2 PAGE ELEMENT	 	 					 */
-/* ----------------------------------------------*/
 
-/* 07.2.1 Page Title Wrapper					 */
-/* ----------------------------------------------*/
-.page-title{
-	padding-bottom:50px;
-}
 
 /* 07.2.2 Section Title Wrapper					 */
 /* ----------------------------------------------*/
@@ -1253,47 +1219,6 @@ ul.tdet li i { color: #999; }
 
 
 
-
-
-/* 07.2.3 Icon Title Wrapper					 */
-/* ----------------------------------------------*/
-.icon-title {
-	position:absolute; 
-	margin: auto; 
-	left:0; 
-	right:0;
-	top:-50px;
-}
-
-/* 07.2.4 Title-exerpt White Box				 */
-/* ----------------------------------------------*/
-.title-exerpt{
-	margin: 35px 0px 40px;
-	position:relative;
-	padding:20px 35px;
-	text-align: center;
-}
-
-.title-exerpt p { margin: 12px 0px 5px; }
-
-.title-exerpt h3 { color: #f7313e; font-family: VeryBerryPro-Regular; margin: 0px 0px; padding: 0px 0px; }
-
-
-.title-exerpt .custom-heart-icon{
-	position:absolute;
-	margin: auto; 
-	left:0; 
-	right:0; 
-	top:-12px;
-	color:#f0394d !important; 
-	background-color:#e1dddd !important;
-}
-
-/* 07.2.5 Blurb Wrapper							 */
-/* ----------------------------------------------*/
-.blurb{
-	margin-top:20px;
-}
 
 /* 07.2.6  Align Middle Wrapper					 */
 /* ----------------------------------------------*/
@@ -1400,17 +1325,7 @@ hr.line-divider{
 	margin:50px 0
 }
 
-/* 07.2.9 HEART DIVIDER							 */
-/* ----------------------------------------------*/
 
-.heart-divider{
-	height:100%; 
-	width:100%;
-	margin:0 auto; 
-	margin-top:20px;
-	margin-bottom:20px;
-	text-align:center;
-}
 
 .white-line{
 	width:30px; 
@@ -1426,46 +1341,7 @@ hr.line-divider{
 	border-top:solid 2px #e1dddd;
 }
 
-/*.left-line{
-	color:#FFF; 
-	letter-spacing:-2px; 
-	float:left; 
-	margin-right:10px
-}
 
-.right-line{
-	color:#FFF; 
-	letter-spacing:-2px; 
-	float:left;
-	margin-left:10px
-}
-
-.two-heart{
-	float:left;
-}*/
-
-.pink-heart{
-	color:#f0394d; 
-	font-size:18px; 
-	position:relative; 
-	z-index:3
-}
-
-.white-heart{
-	color:#FFF; 
-	font-size:18px; 
-	margin-left:-15px; 
-	position:relative;
-	z-index:2
-}
-
-.grey-heart{
-	color: #e1dddd;
-	font-size:18px; 
-	margin-left:-15px; 
-	position:relative;
-	z-index:2
-}
 
 
 /* 07.2.10 BUTTON					 			 */
@@ -2044,12 +1920,6 @@ a:hover .de-icon.effect3{
 }
 
 
-/*===============================================*/
-/* 10. MASONRY GALLERY							 */
-/*===============================================*/
-.masonry-col.w100{
-	width:100%;
-}
 
 /* ----------------------------------------------*/
 /* 10.1 Three Column No Gutter		 			 */
@@ -2250,7 +2120,7 @@ a:hover .de-icon.effect3{
 }
 
 
-.hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
+.hide-text{ color:transparent;text-shadow:none;background-color:transparent;border:0;}
 .input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 .btn-file{overflow:hidden;position:relative;vertical-align:middle;}.btn-file>input{position:absolute;top:0;right:0;margin:0;opacity:0;filter:alpha(opacity=0);transform:translate(-300px, 0) scale(4);font-size:23px;direction:ltr;cursor:pointer;}
 .fileupload{margin-bottom:9px;}.fileupload .uneditable-input{display:inline-block;margin-bottom:0px;vertical-align:middle;cursor:text;}
@@ -2698,6 +2568,20 @@ span.use { font-size: 20px; line-height: 22px;  }
 #Quote .container .row {    display: table-cell;
   text-align: center;
   vertical-align: middle; }
+  
+ .title-exerpt {
+    margin: 35px 0px 40px;
+    position: relative;
+    padding: 20px 35px;
+    text-align: center;
+} 
+  .title-exerpt h3 {
+    color: #f7313e;
+    font-family: VeryBerryPro-Regular;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+  
 
 /* ----------------------------------------------*/
 /* 12.3 How it Works		 			 */
@@ -2724,7 +2608,6 @@ height: 38px; width: 38px; float: left; margin: 80px 0px 0px -35px;
  .col-md-4 { overflow: visible !important; }
  
 
-
 /* ----------------------------------------------*/
 /* 12.4 Featured Section				 			 */
 /* ----------------------------------------------*/
@@ -2750,35 +2633,6 @@ footer a { color: #fff; }
 .social ul.icons li a { background-color: #fff; height: 40px; width: 40px; border-radius: 20px; display: block; color: #f7313e; line-height: 45px; text-align: center; }
 .social ul.icons li a i { font-size: 18px; }
 
-#thank-you{
-	text-align:center; 
-	color:#FFF; 
-	font-family: 'Pacifico';
-	-ms-transform: rotate(-10deg); 
-	-webkit-transform: rotate(-10deg); 
-	transform: rotate(-10deg);
-	padding-right:30px;
-	margin-top:40px;
-	margin-bottom:25px;
-}
-
-#thank{
-	font-size:55px; 
-	line-height:45px
-}
-
-#you{
-	font-size:55px; 
-	line-height:45px;
-}
-
-#footer-couple-name{
-	font-family: 'Josefin Sans', sans-serif; 
-	font-size:20px; 
-	color:#FFF; 
-	letter-spacing:3px; 
-	margin-top:10px;
-}
 
 
 /*===============================================*/
@@ -3068,8 +2922,6 @@ div.g-selec select {
 
 div.g-selec select.active {  background-color: #f7313e; }
 
-
-
 /*target Internet Explorer 9 and Internet Explorer 10:*/
 @media screen and (min-width:0\0) { 
     div.g-selec select {
@@ -3078,21 +2930,11 @@ div.g-selec select.active {  background-color: #f7313e; }
     }
 }
 
-
-
-
-
-
-
 ul.reg-list li:nth-child(even), ul.reg-list li, 
 ul.search-list li, ul.search-list li:nth-child(even) { background: #FFF; }
 
 ul.reg-list li:nth-child(odd), 
 ul.search-list li:nth-child(odd) { background: #f9f9f9; }
-
-
-
-
 
 
 /* ----------------------------------------------*/
@@ -3155,11 +2997,6 @@ form.search input { margin-left: -80%; width: 175% !important; }
 form.search button {  vertical-align: top; }
 
 
-
-
-/*===============================================*/
-/* 15. PLUGIN CUSTOM							 */
-/*===============================================*/
  
 /* -------------------------------------------*/
 /* 15.1 Owl Carousel 						  */
@@ -3171,14 +3008,11 @@ form.search button {  vertical-align: top; }
 #owl-quotes { position: relative; }
 .owl-wrapper-outer { position: relative; min-height: 250px; overflow: hidden; }
 .owl-wrapper { position: absolute; }
-
-.owl-controls { }
 .owl-buttons { width: 100%; }
 .owl-buttons, .owl-prev, .owl-next { position: absolute; top: 44%;  font-size: 24px; color: #f7313e; }
 .owl-prev, .owl-next { width: 24px; height: 100%; outline: 0; cursor: pointer; display: block; }
 .owl-prev { left: 0px; }
 .owl-next { right: 0px; }
-
 .owl-item { float: left; }
 
 
@@ -3258,7 +3092,7 @@ button.mfp-close, button.mfp-arrow {
 
 @media screen and (max-width: 1000px) {	
  
-.logo_holder { width: 120; margin: -30px auto 28px; float: none; text-align: center; }
+.logo_holder { width: 120px; margin: -30px auto 28px; float: none; text-align: center; }
 
 #hero .VeryBerry {
     font-size: 7em;
@@ -3741,29 +3575,19 @@ form.search input {
 	line-height:20px;
 }
 
-
-
-
 }
-
-
-
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-	
-	
+
 .hero.row .col-sm-4  { width: 100%; }
 
-
-
 }
-
-
 
 @media screen and (max-width: 768px) {	
 
 .mhide { display: none; }
-.slide-overlay{
+
+.slide-overlay {
 	height: 155px;
 	top: 595px;
 	}
@@ -4064,8 +3888,6 @@ ul.tdet li.last { width: 99.999%; padding: 10px 0px; }
     background-position: -600px 100px !important;
 }	
 
-font-weight: 100;
-
 ul.menu-3col li {
     display: block;
     line-height: 16px;
@@ -4076,7 +3898,7 @@ ul.menu-3col li {
     font-weight: 600;
     color: #f7313e;
     padding: 12px 0px;
-	  border-bottom: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
 }
 
 ul.menu-3col li a {
@@ -4433,21 +4255,12 @@ span.use:before {
 	line-height:50px;
 }
 
-.simple-countdown .countdown-amount {
-	font-size:16px;
-}
+.simple-countdown .countdown-amount { font-size:16px; }
 .simple-countdown .countdown-period {
 	font-size:16px;
 }
 
-
-#how-it-works{
-	padding:60px 0 40px 0;
-}
-
-
-
-	
+#how-it-works { padding:60px 0 40px 0; }
 
 }
 
