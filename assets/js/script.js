@@ -2,7 +2,28 @@
 
 
 
-
+$(document).ready(function() {
+ 
+  $("#owl-quotes").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+	   slideSpeed : 500,
+    paginationSpeed : 800,
+    rewindSpeed : 1000,
+	  
+	navigation : true,
+    navigationText : ["<i class='de-icon-left-open-big'></i>","<i class='de-icon-right-open-big'></i>"],
+	 pagination : false,
+ 
+      items : 3,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [991,1]
+	  
+	  
+ 
+  });
+ 
+});
 
 	
 	
@@ -465,5 +486,7 @@ $(function() {
     r.length > 0 && (r.trigger("click.fileupload"), t.preventDefault())
   })
 }(window.jQuery)
+
+
 
 

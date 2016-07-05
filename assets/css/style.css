@@ -50,7 +50,7 @@ h1, .h1{
 h2, .h2{
 	font-size:50px;
 	text-transform: uppercase;
-	font-weight: 100;
+	font-weight: 300;
 	letter-spacing: 1px;
 }
 
@@ -106,6 +106,7 @@ a{
 
 a:hover{
 	text-decoration:none;
+	color: #9f9f9f;
 }
 
 .clearboth{
@@ -148,7 +149,11 @@ hr { margin: 50px 0px; border-bottom: 1px solid #c2c2c2; height: 51px;  float: n
 
 .lg-80-padding { padding: 80px 0px;  }
 .lg-60-padding { padding: 60px 0px;  }
+.lg-50-padding { padding: 50px 0px;  }
 .lg-40-padding { padding: 40px 0px;  }
+.sm-15-padding { padding: 15px 0px; }
+
+
 
 
 
@@ -246,6 +251,11 @@ small a:hover {
   border-bottom-color: #222;
 }
 
+.logo-wrapper { width: 150px; margin-top: 8px; }
+.logo-wrapper img { max-width: 100%; height: auto; }
+
+.logo_holder { width: 120px; }
+.logo_holder img { max-width: 100%; height: auto; }
 
 /*===============================================*/
 /* 02. NAV BAR  	 							 */
@@ -2415,16 +2425,20 @@ form label{
 /*-----------------------------------------------*/
 /* 11.5 Button									 */
 /*-----------------------------------------------*/
+
+form.form-inline button { margin: 0px 8px; }
+
+
+form.form-inline .form-control {
+    border: 0;
+  
+}
+
 form .btn-primary 
-{
-    padding: 12px 18px;
-    margin: 0 15px 5px 15px; 
-    border-radius: 0;
-	font-family: 'Josefin Sans', sans-serif;
-color:#6a6a6a;
-	font-size:13px;
-  	background-color: #FFF;
-  	border-color: #cccccc;
+{   background-color:#f7313e; 
+	border: 0;
+	color:#FFF;
+  	
 }
 
 form .btn-primary:hover,
@@ -2433,18 +2447,35 @@ form .btn-primary.focus,
 form .btn-primary:active,
 form .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-	background-color:#f0394d; 
-	border-color:#f0394d;
-	color:#FFF;
- 	border-color: #cccccc;
+	color:#f7313e;
+    background-color: #FFF;
+ 	
 }
 
 .btn  { height: 50px; line-height: 50px; padding: 0px 40px; text-align: center; border-radius: 25px; text-transform: uppercase; }
-.btn.red { color: #fff; background-color: #f7313e; }
+.btn.red, btn.btn-primary { color: #fff; background-color: #f7313e; }
 .btn.white { color: #f7313e; background-color: #fff; }
 
+.form-group.one { width: 30%;  }
+.form-group.two, .form-group.three  { width: 18%; } 
+form.form-inline .btn { min-width: 16%; }
+form.form-inline .form-group .form-control { width: 100%; }
+form.form-inline .form-group { margin: 0px 12px 0px 3px; }
+.section-box form.form-inline .form-group label { width: 100%; }
 
-
+.section-box .form-inline label.selec:after {
+    content: '\ea32';
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: #aaa;
+    right: 20px;
+    top: 17px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+}
 /*-----------------------------------------------*/
 /* 11.6 Checkbox and Radio (Custom)				 */
 /*-----------------------------------------------*/
@@ -2569,6 +2600,11 @@ form .has-error .btn-primary{
 }
 
 .list-items li{ background-color: #fff; margin-bottom: 10px; display: block; }
+
+ul.item-list.padd li{ line-height: 44px; }
+ul.item-list.padd li.title { text-transform: none; }
+
+
 span.use:before {
 	font-family: "fontello";
     font-style: normal;
@@ -2589,7 +2625,7 @@ span.use { font-size: 20px; line-height: 22px;  }
     content: "›";
     color: #f0394d;
     font-size: 65px;
-    font-weight: 100;
+    font-weight: 300;
     position: absolute;
     right: 25px;
     top: 15px;
@@ -2750,14 +2786,17 @@ footer a { color: #fff; }
 /*===============================================*/
 
 .edit { position: absolute; top: 18px; right: 15px; display:inline-block; height: 46px;  color: #fff; font-size: 20px; font-weight: 300; width: 120px; line-height: 50px; }
-.edit a { background-color: #bd1621; width: 46px;  height: 46px; border-radius: 50%; color: #fff; display:inline-block; font-size: 18px;  margin: 0px 10px; float: right; } 
+.edit a, .more-plus { background-color: #bd1621; width: 46px;  height: 46px; border-radius: 50%; color: #fff; display:inline-block; font-size: 18px;  margin: 0px 10px 10px;; float: right; } 
 .edit a i { color: #fff; padding-left: 10px;  }
 
+
+.more-plus {     font-size: 48px; float: none; margin: 0px auto; font-weight: 200; line-height: 46px; }
+.more { font-size: 18px; color: #898989; line-height: 25px; }
 .edit span.plus {
     font-size: 49px;
 	line-height: 45px;
     padding: 0px 11px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .back-link { position: absolute; top: 30px; left: 15px;  }
@@ -2816,6 +2855,12 @@ section#continue input.submit { float: right; padding: 0px 50px; cursor: pointer
     font-size: 18px;
 }
 
+.box-head form { width: 100%; padding: 10px; background-color: #c32a36; margin: 15px 0px -18px; }
+
+.box-head form .form-group input, .box-head form .form-group select, .box-head form .form-group textarea { margin: 8px 0px 8px;
+  
+}
+
 
 #guest_view1, #guest_view2, #guest_view3  {
 	min-height: 850px;
@@ -2840,7 +2885,7 @@ ul.item-list { list-style: none; padding: 0px 0px ; margin: 0px 0px; }
 ul.item-list li { color: #f7313e; font-weight: 300; }
 ul.item-list .title { font-weight: bold; color: #000; }
 
-p.price { color: #f7313e; font-size: 28px; line-height: 40px; position: relative; }
+.price { color: #f7313e; font-size: 28px; line-height: 40px; position: relative; }
 a.u-edit {
     font-size: 60%;
 
@@ -2934,7 +2979,8 @@ ul.col-3-up li.active:after {
 
 
 
-ul.reg-list, ul.details-list { list-style: none; margin: 0px 0px; padding: 0px 0px;  }
+ul.reg-list, ul.details-list, ul.search-list { list-style: none; margin: 0px 0px; padding: 0px 0px;  }
+
 ul.details-list li h4 { color: #000; font-size: 23px; font-weight: 700; }
 ul.details-list li { padding-top: 38px; }
 ul.details-list li a {  text-transform: uppercase; color: #f7313e;  border-bottom: 1px solid #f7313e; font-size: 80%;  }
@@ -2950,6 +2996,12 @@ ul.reg-list li span.icon i { line-height: 99px;  color: #999; font-size: 22px; }
 ul.reg-list li p { padding: 0px 0px; margin: 0px 0px; }
 
 ul.reg-list li img { float: left; display: block; width: 12%; max-width: 95px;  height: auto;  margin: 0px 0px; margin-left: 4%; }
+
+
+ul.search-list li a { display: block; outline: none; border: 0; }
+ul.search-list li img { float: left; display: block; width: 12%; max-width: 95px;  height: auto;  margin: 0px 0px; margin-left: 4%;  }
+
+
 ul#sortable li img { float: left; display: block; width: 12%; max-width: 95px;  height: auto;  margin: 0px 0px; margin-left: 0%; }
 
 
@@ -2962,6 +3014,24 @@ ul.reg-list li .desc {
     padding: 15px 0px 0px 0px;
     height: 95px;
 }
+ul.search-list li { padding: 25px 0px; }
+ul.search-list li .desc {    float: left;
+    display: block;
+    width: 53%;
+    margin: 0 3%; 
+    padding: 0px 0px 0px 0px;
+    height: 95px;  }
+	
+ul.search-list li .desc h4 {  color: #f7313e;
+    font-size: 28px; line-height: 80px;  }	
+	
+	ul.search-list li .deets { width: 25%; float: left; height: 95px; }
+	.wdate, .loc { width: 100%; display: block; }
+	.wdate { margin-top: 30px; color: #000; font-weight: 400; font-size: 23px; line-height: 28px;  }
+	.loc { font-size: 21px; font-weight: 300;  }
+	
+	
+	
 
 ul.reg-list li .l-edit { width: 7%; text-align: center; line-height: 99px; float: left; text-align: center; }
 ul.reg-list li .l-edit a { text-decoration: underline; font-size: 18px; color: #f7313e; }
@@ -3014,8 +3084,11 @@ div.g-selec select.active {  background-color: #f7313e; }
 
 
 
-ul.reg-list li:nth-child(even), ul.reg-list li {background: #f9f9f9; }
-ul.reg-list li:nth-child(odd) { background: #FFF;}
+ul.reg-list li:nth-child(even), ul.reg-list li, 
+ul.search-list li, ul.search-list li:nth-child(even) { background: #FFF; }
+
+ul.reg-list li:nth-child(odd), 
+ul.search-list li:nth-child(odd) { background: #f9f9f9; }
 
 
 
@@ -3032,7 +3105,7 @@ ul.reg-list li:nth-child(odd) { background: #FFF;}
     padding: 100px 0px 75px;
     margin-bottom: -50px;
 }
-#sign-up h3 { font-weight: 100; line-height: 1.5; }
+#sign-up h3 { font-weight: 300; line-height: 1.5; }
 form.signUp { max-width: 650px; padding: 25px 0px; }
 
 button.submit, input.submit { background-color: #f7313e; border:0;  height: 50px; border-radius: 25px; color: #fff; text-transform: uppercase; margin-top: 2px; line-height: 53px; }
@@ -3059,7 +3132,7 @@ button.submit, input.submit { background-color: #f7313e; border:0;  height: 50px
     line-height: 30px;
     color: #fff;
     z-index: 1000;
-	font-weight: 100;
+	font-weight: 300;
 }
 
 /* ----------------------------------------------*/
@@ -3072,7 +3145,7 @@ button.submit, input.submit { background-color: #f7313e; border:0;  height: 50px
 	margin-bottom: -50px;
 }
 
-#find-registry h3 { color: #000; font-weight: 100; }
+#find-registry h3 { color: #000; font-weight: 300; }
 
 #find-registry .container { padding-top: 125px; }
 
@@ -3084,10 +3157,6 @@ form.search button {  vertical-align: top; }
 
 
 
-
-
-/
-
 /*===============================================*/
 /* 15. PLUGIN CUSTOM							 */
 /*===============================================*/
@@ -3096,25 +3165,23 @@ form.search button {  vertical-align: top; }
 /* 15.1 Owl Carousel 						  */
 /* -------------------------------------------*/
 .owl-carousel .item{
-	padding:0 15px
+	padding:0 0px
 }
 
-.owl-theme .owl-controls .owl-page span{
-	display: block;
-	width: 8px;
-	height: 8px;
-	margin: 5px 7px;
-	opacity: 1;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	background: #333333;
-}
+#owl-quotes { position: relative; }
+.owl-wrapper-outer { position: relative; min-height: 250px; overflow: hidden; }
+.owl-wrapper { position: absolute; }
 
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-	background: #f0394d;
-}
+.owl-controls { }
+.owl-buttons { width: 100%; }
+.owl-buttons, .owl-prev, .owl-next { position: absolute; top: 44%;  font-size: 24px; color: #f7313e; }
+.owl-prev, .owl-next { width: 24px; height: 100%; outline: 0; cursor: pointer; display: block; }
+.owl-prev { left: 0px; }
+.owl-next { right: 0px; }
+
+.owl-item { float: left; }
+
+
 
 /* -------------------------------------------*/
 /* 15.2 MAGNIFIC POPUP 						  */
@@ -3145,6 +3212,7 @@ button.mfp-close, button.mfp-arrow {
 /*===============================================*/
 @media screen and (max-width: 1200px) {
 	
+	.rating {font-size: 18px; }
 	
 	
 .affix .section-box.top, .affix-top .section-box.top {
@@ -3188,15 +3256,9 @@ button.mfp-close, button.mfp-arrow {
 
 }
 
-
-
-
-
-
-
 @media screen and (max-width: 1000px) {	
  
-.logo_holder { width: 100%; margin: -30px 0px 22px; float: none; text-align: center; }
+.logo_holder { width: 120; margin: -30px auto 28px; float: none; text-align: center; }
 
 #hero .VeryBerry {
     font-size: 7em;
@@ -3307,7 +3369,7 @@ h2.gdate {
 /* 02.2 Logo & Nav Position	 					 */
 /* ----------------------------------------------*/
 .logo-wrapper{
-	margin:0;
+	margin: 8px 0px 0px 15px;
 }
 
 #nav-menu { display: none }
@@ -3639,6 +3701,10 @@ ul.reg-list li .desc {  width: 38%; }
 .b-content { padding: 35px 55px; font-size: 22px; }
 
 
+/* ----------------------------------------------*/
+/* 02.2 ID Adjustments					 */
+/* ----------------------------------------------*/
+
 
 
 
@@ -3681,16 +3747,30 @@ form.search input {
 }
 
 
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	
+	
+.hero.row .col-sm-4  { width: 100%; }
+
+
+
+}
+
+
+
 @media screen and (max-width: 768px) {	
 
 .mhide { display: none; }
 .slide-overlay{
 	height: 155px;
-	
 	top: 595px;
-	
-}
+	}
 
+.section-title h2, .section-title h1 {
+    font-size: 35px;	
+}
 .slide-image {
     background-size: 195% !important;
     background-position: right 90px !important;
@@ -3725,6 +3805,8 @@ form.search input {
 
 
 #trips { margin-top: -50px; }
+
+.rating { font-size: 20px; } 
 
 .image-divider.auto-height, .video-divider.auto-height {
 
@@ -3763,6 +3845,19 @@ form.search input {
 /* 11. FORM										 */
 /*===============================================*/
 
+.form-group.one {
+    width: 98%;
+    margin: 0px;
+}
+
+.form-group.two, .form-group.three { width: 48%; float: left; margin: 0px 0px 0px 0px; margin-right: 2%;  }
+.form-group.two { margin: 0 2% 0 1% !important; }
+.form-group.three { margin: 0 0% 0 0 !important; }
+form .btn.btn-primary {
+width: 98%;
+margin-bottom: 8px;
+margin-left: 1%;
+}
 
 ul.col-3-up li {
     width: 31.99%;
@@ -3803,7 +3898,7 @@ form.search input {
 .b-content { padding: 30px 30px; font-size: 22px; }
 
 
-.edit a {
+.edit a, .more-plus {
     background-color: #bd1621;
     width: 35px;
     height: 35px;
@@ -3814,13 +3909,23 @@ form.search input {
     margin: 0px 10px;
     float: right;
 }
+
+.more-plus  { font-size: 30px; line-height: 35px; float: none;}
 .edit span.plus {
    font-size: 43px;
     line-height: 30px;
     padding: 0px 8px;
-    font-weight: 100;
+    font-weight: 300;
     margin-top: -2px;
 }
+.close {
+position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    opacity: 1;     margin: -2px -1px 0px 0px;
+}
+
 .edit a { position: relative; }
 .edit a i {     
     padding-left: 8px;
@@ -3839,7 +3944,7 @@ form.search input {
 /* Registry List					 */
 /* ----------------------------------------------*/
 
-ul.reg-list li img {
+ul.reg-list li img, ul.search-list li img {
     float: left;
     display: block;
     width: 12%;
@@ -3848,6 +3953,44 @@ ul.reg-list li img {
     margin: 0px 0px;
     margin-left: 4%;
 }
+
+ul.search-list li .desc {
+    float: left;
+    display: block;
+    width: 65%;
+    margin: 0 3%;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+}
+
+ul.search-list li .desc h4 {
+    color: #f7313e;
+    font-size: 24px;
+    line-height: 26px;
+	margin: -3px 0px 9px;
+}
+ul.search-list li .deets {
+  float: left;
+    display: block;
+    width: 65%;
+    margin: 0 3%;
+    padding: 0px 0px 0px 0px;
+	height: auto;
+}
+
+.wdate {
+    margin-top: -3px;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.loc {
+    font-size: 19px;
+    font-weight: 300;
+}
+
 
 ul.reg-list li br { height: 0px; margin: 0px 0px; padding: 0px 0px; }
 
@@ -3892,8 +4035,20 @@ ul.reg-list li .price p span { font-size: 18px; }
 ul.reg-list li .price p { font-size: 15px; }
 
 
-ul.reg-list li .desc p { display: none
+ul.reg-list li .desc p { display: none; }
 
+.rating { font-size: 20px; }
+
+ul.menu-3col li {
+    display: block;
+    line-height: 16px;
+    text-align: center;
+    width: 99%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f7313e;
+    padding: 12px 0px;
 }
 
 
@@ -3909,6 +4064,7 @@ ul.tdet li.last { width: 99.999%; padding: 10px 0px; }
     background-position: -600px 100px !important;
 }	
 
+font-weight: 100;
 
 ul.menu-3col li {
     display: block;
@@ -3948,6 +4104,12 @@ h1, .h1 {
     font-size: 33px;
 }
 
+#hero h2 {
+
+    font-size: 1.4em;
+}
+
+
 ul.reg-list li .desc {  margin-right: 5%;  margin-left: 5%; width: 60%; margin-bottom: -45px; margin-top: -15px;}
 ul.reg-list li .price { margin-top: -15px;     margin-right: 5%;  margin-left: 5%; width: 60%;  line-height: 18px;   }
 
@@ -3982,7 +4144,7 @@ ul#sortable li img {
     margin: 0px 0px;
     margin-left: 0%;
 }
-ul.reg-list.ui-sortable li .desc {  width: 43%; margin-bottom: -45px; margin-top: -15px; }
+ul.reg-list.ui-sortable li .desc {  width: 42%; margin-bottom: -45px; margin-top: -15px; }
 ul.reg-list.ui-sortable li .desc h4 { font-size: 20px; }
 ul.reg-list.ui-sortable li .price { margin-top: -15px;     margin-right: 3%;  margin-left: 5%; width: 41%;}
 ul.reg-list.ui-sortable li .l-edit { width: 43%; margin-right: 3%;  margin-left: 51%; text-align: left; }
@@ -3992,25 +4154,143 @@ ul.col-3-up li {
     display: block;
 }
 
+.edit {
+    right: 1px;
+}
 
+}
+
+
+@media screen and (max-width: 505px) {
+	
+	
+
+
+.list-items li p, .list-items li span {
+    display: block;
+    width: 195px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}	
+	
+#hero .VeryBerry {
+    position: relative;
+    width: 290px;
+    height: 110px;
+    margin: -10px auto 10px;
+    font-size: 3.8em;
+}
+
+
+
+#t-raised {
+    margin-top: 13px;
+    width: 100%;
+}
+
+.rnumber {
+    font-size: 35px;
+}
+
+.list-items li {
+    height: 80px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.list-items li span.window {
+    margin-right: 15px;
+    display: inline-block;
+    width: 102px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.list-items li a:after {
+     right: 15px;
+    top: -5px;
 
 }
 
 
 
+.list-items li:hover a:after {
+    right: 10px;
+
+}
+
+
+.list-items li p {
+    padding-top: 15px;
+    font-size: 24px;
+    line-height: normal;
+    margin: 0;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+
+.list-items li span { font-size: 16px; }
+
+span.use:before {
+  
+    font-size: 19px;
+    margin-right: 8px;
+}
+
+
+.list-items li img {
+    transition: all 0.3s;
+}
+}
+
+
+
+
+
 @media screen and (max-width: 480px)  {	
 
+h1, .h1 {
+    font-size: 30px;
+}
 
 
-/*===============================================*/
-/* 01. GENERAL			 						 */
-/*===============================================*/
+.section-title h2, .section-title h1 {
+    font-size: 30px;
+}
+
 
 form.search input {
     margin-left: auto;
     margin-right: auto;
     width: 85%!important;
 }
+
+ul.search-list li .desc h4 {
+    color: #f7313e;
+    font-size: 22px;
+    line-height: 24px;
+	margin: -3px 0px 9px;
+}
+
+
+.wdate {
+    margin-top: -3px;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.loc {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
 
 
 #save-the-date{
@@ -4078,7 +4358,7 @@ form.search input {
 /* ----------------------------------------------*/	
 #trips{
 	background-color: #f7313c;
-	padding:60px 0 40px 0;
+	padding: 10px 0 0px 0;
 }
 
 .list-items li{ background-color: #fff; }
@@ -4116,7 +4396,7 @@ form.search input {
 
 .list-items li p, .list-items li span {
     display: block;
-    width: 230px;
+    width: 210px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4164,83 +4444,80 @@ span.use:before {
 #how-it-works{
 	padding:60px 0 40px 0;
 }
+
+
+
 	
 
 }
 
-@media screen and (max-width: 505px) {
-
-.list-items li {
-    height: 80px;
-    display: block;
-    color: #000;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.list-items li span.window {
-    margin-right: 15px;
-    display: inline-block;
-    width: 102px;
-    height: 80px;
-    overflow: hidden;
-}
-
-.list-items li a:after {
-     right: 15px;
-    top: -5px;
-
-}
-
-
-
-.list-items li:hover a:after {
-    right: 10px;
-
-}
-
-
-.list-items li p {
-    padding-top: 15px;
-    font-size: 24px;
-    line-height: normal;
-    margin: 0;
-    font-style: normal;
-    font-weight: lighter;
-}
+@media screen and (max-width:410px) {
 
 .list-items li p, .list-items li span {
     display: block;
-    width: 200px;
+    width: 205px;
+}
+
+}
+
+
+@media screen and (max-width: 365px) {
+	
+	
+.bottom-total { margin-top: 24px; }	
+
+ul.search-list li .desc {
+    float: left;
+    display: block;
+    width: 63%;
+    margin: 0 3%;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+}
+
+ul.search-list li .desc h4 {
+	margin-top: 0px;
+font-size: 19px;
+}
+ul.search-list li .deets {
+  float: left;
+    display: block;
+    width: 63%;
+    margin: 0 3%;
+    padding: 0px 0px 0px 0px;
+	height: auto;
+}	
+	
+	
+.list-items li p {
+    padding: 15px 0px 5px;
+    font-size: 21px;
+}
+	
+.list-items li p, .list-items li span {
+    display: block;
+    width: 145px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-.list-items li span { font-size: 16px; }
-
-span.use:before {
-  
-    font-size: 19px;
-    margin-right: 8px;
-}
-
-
-.list-items li img {
-    transition: all 0.3s;
-}
-}
-
-
-
-@media screen and (max-width: 320px) {
-/* 06.5.6 Save The Date Title */
-/* ----------------------------------------------*/
-#save-the-date{
-	padding-right:40px;
-	padding-top:0;
-	margin-bottom:0px;
+}		
 	
-}
+
+.list-items li span.window {
+    margin-right: 10px;
+    display: inline-block;
+    width: 101px;
+	margin-left: -15px;
+}	
+	
+	
+.list-items li a:after {
+    right: 8px;
+    top: -5px;
+}	
+	
+	
+
 
 #save{
 	font-size:50px; 
@@ -4256,43 +4533,6 @@ span.use:before {
 	line-height:20px;
 }
 
-/* ----------------------------------------------*/
-/* 12.1 Couple Section							 */
-/* ----------------------------------------------*/
-.couple-name{
-	font-size:30px; 
-	padding-top:70px !important;
-	line-height:30px; 
-}
-
-.couple-exerpt{
-	margin-top:20px;
-
-}
-
-
-
-#thank-you{
-	text-align:center; 
-	color:#FFF; 
-	font-family: 'Pacifico';
-	-ms-transform: rotate(-10deg); 
-	-webkit-transform: rotate(-10deg); 
-	transform: rotate(-10deg);
-	padding-right:30px;
-	margin-top:40px;
-	margin-bottom:25px;
-}
-
-#thank{
-	font-size:45px; 
-	line-height:35px
-}
-
-#you{
-	font-size:45px; 
-	line-height:35px;
-}
 
 }
 

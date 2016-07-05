@@ -5,7 +5,7 @@
      	<meta content="width=device-width, initial-scale=1.0" name="viewport">
      	<meta name="description" content="">
       
-      	<title> Cause User Account Items</title>
+      	<title>Search Results | Cause Wedding </title>
         
         <link rel="icon" href="/assets/images/favicon.ico">
         <!-- Bootstrap -->
@@ -28,7 +28,7 @@
         
      
        
-    	<link href="/assets/css/style.css" rel="stylesheet" media="screen">
+    	<link href="./assets/css/style.css" rel="stylesheet" media="screen">
      <!-- JS for Sortable Items -->
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -66,7 +66,7 @@
                 		<li class="first-child"><a href="/">how it works</a></li> 
                         <li><a href="/cause_findregistry.html">find a registry </a></li> 
                         <li><a href="/cause_signin.html">sign in</a></li>
-                        <li><a href="/cause_signup.html">sign up</a></li>                              
+                        <li><a href="/cause_signup.html">Start A Registry</a></li>                              
                      </ul>
                         
                     
@@ -77,18 +77,7 @@
             </nav>
         </header> <!-- END of NAVIGATION -->
         
-        <section id="secondary-nav" class="animation fadeInDown">
-        <div class="container">
-        <div class="row">
-       
-        <ul class="col-3-up">
-        <li><a href="/cause_useraccount_info.html"><span>Registry Info</span></a></li>
-        <li class="active"><a href="/cause_useraccount_items.html"><span>Items</span></a> </li>
-        <li><a href="/cause_useraccount_general.html"><span>General Info</span></a> </li>
-        </ul>
-        
-    </div></div>
-        </section>
+      
         
         
   
@@ -104,140 +93,157 @@
                         	
                        
                             
-                            <div class="text-center lg-80-padding animation fadeIn red" id="topp">
-                            <h1 class="title"> Welcome Back,<br>
-                            Anne & Joshua</h1>
+                            <div class="text-center lg-50-padding animation fadeIn red" id="topp">
+                            <h1 class="title"> Couples<br>
+                            Search Results</h1>
                             
                             </div>
                             
                             
             
                             
-                            <form class="form-inline reg-edit"> 
-                <div class="section-box" id="registry">
-                            <div class="box-head text-center">                            
-                            <h2>Our Registry</h2>
-                            </div>
-                           <ul class="tdet">
-                            <li><strong>133</strong> Gifts</li>
-                            <li><strong>$7,580</strong> Total</li>
-                            <li class="last"><i class="de-icon-move-2"></i> Drag to Reorder</li>
-                          </ul>
+                          
+                <div class="section-box" id="top">
+                       <div class="box-head text-center">                            
+                            <h2>Upcoming Weddings</h2>
                             
+                            <form id="search" class="form-inline">
+                            <div class="form-group one">
+                            <label class="sr-only" for="Name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="form-group two">
+                            <label class="sr-only" for="Month">Month</label>
+                            <label class="selec month">
+                            <select id="Month" class="form-control" name="Month">
+                            <option value="0">Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                            
+                            </select> 
+                            </label>
+                            
+                            </div>
+                            <div class="form-group three">
+                            <label class="sr-only" for="Year">Year</label>
+                            <label class="selec Year">
+                            <select id="Year" class="form-control" name="Year">
+                            <option value="0">Year</option>
+                            <option value="1">2016</option>
+                            <option value="2">2017</option>
+                            <option value="3">2018</option>
+                            <option value="4">2019</option>
+                            <option value="5">2020</option>
+                            <option value="6">2021</option>
+                            <option value="7">2022</option>
+                            <option value="8">2023</option>
+                            <option value="9">2024</option>
+                            <option value="10">2025</option>
+                            <option value="11">2026</option>
+                            </select> 
+                            </label>
+                            
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Search</button>
+                            </form>
+                        </div>
+
+                        
+                            <p class="sm-15-padding text-center"><strong>438</strong> Results for "John Doe"</p>
                             
                             
                         
-<script>
-  $(function() {
-    $( "#sortable" ).sortable();
-    $( "#sortable" ).disableSelection();
-  });
-  </script>            
+          
                             
-                <ul class="reg-list" id="sortable">
+                <ul class="search-list">
                             
-		                <li class="ui-state-default"><span class="icon"><i class="de-icon-move-2"></i></span>
-				<img src="./assets/images/dynamic_img/plane.jpg" class="img-responsive img-circle"/>
+		                <li>
+                          <a href="#">
+				<img src="./assets/images/couple_1.jpg" class="img-responsive img-circle"/>
 					<div class="desc">
-				         	<h4>Airline Miles</h4>
-						<p>Help us get there and Back</p>
-					</div>
-					<div class="price">$<span id="g-selec-price-1">50.00</span>
-						<p><span id="g-selec-remaining-1">40</span> remaining</p>
-					</div>
-                    <div class="l-edit">
-                    <a href="">Edit</a>
-                    </div>
-				
-		                        <br clear="all">                      
+				         	<h4>John Doe & Jane Doe</h4></div>
+				 <div class="deets">
+                    <span class="wdate">May 5, 2016</span>
+                    <span class="loc">Orlando, FL</span>
+                    </div>		
+            
+		                        <br clear="all">  </a>                    
 				</li>                               
                            
-				<li class="ui-state-default"><span class="icon"><i class="de-icon-move-2"></i></span>
-				<img src="./assets/images/dynamic_img/plane.jpg" class="img-responsive img-circle"/>
+				<li>
+                  <a href="#">
+				<img src="./assets/images/couple_2.jpg" class="img-responsive img-circle"/>
 					<div class="desc">
-				         	<h4>Accommodations</h4>
-						<p>We'll spend 5 nights of Honeymoon Bliss in Florida!</p>
+				         	<h4>Kevin Doe & Tina Doe</h4>
+						
 					</div>
-					<div class="price">$<span id="g-selec-price-2">40.00</span>
-						<p><span id="g-selec-remaining-2">20</span> remaining</p>
-					</div>
-                    <div class="l-edit">
-                    <a href="">Edit</a>
+                    <div class="deets">
+                    <span class="wdate">June, 2016</span>
+                    <span class="loc">Playa Del Carmen, Mex</span>
                     </div>
+                   
+			
 				
-		                        <br clear="all">                      
+		                        <br clear="all">      </a>                
 				</li>
 
-				<li class="ui-state-default"><span class="icon"><i class="de-icon-move-2"></i></span>
-				<img src="./assets/images/dynamic_img/plane.jpg" class="img-responsive img-circle"/>
+				<li>
+                <a href="#">
+				<img src="./assets/images/couple_3.jpg" class="img-responsive img-circle"/>
 					<div class="desc">
-				         	<h4>Dining</h4>
-						<p>Our dinners will be amazing, thanks to you!</p>
+				         	<h4>John Doe & Jane Doe</h4>
+						
 					</div>
-					<div class="price">$<span id="g-selec-price-3">75.00</span>
-						<p><span id="g-selec-remaining-3">30</span> remaining</p>
-					</div>
-                    <div class="l-edit">
-                    <a href="">Edit</a>
+				  <div class="deets">
+                    <span class="wdate">August 26, 2016</span>
+                    <span class="loc">Springfield, PA</span>
                     </div>
 					
-		                        <br clear="all">                      
+		                        <br clear="all"> </a>                     
 				</li>
 
-				<li class="ui-state-default"><span class="icon"><i class="de-icon-move-2"></i></span>
-				<img src="./assets/images/dynamic_img/plane.jpg" class="img-responsive img-circle"/>
+				<li>
+                  <a href="#">
+				<img src="./assets/images/couple_4.jpg" class="img-responsive img-circle"/>
 					<div class="desc">
-				         	<h4>Beverages</h4>
-						<p>Cruises are great....but not without the drink package!!</p>
+				         	<h4>Kevin Doe & Tina Doe</h4>
+						
 					</div>
-					<div class="price">$<span id="g-selec-price-4">50.00</span>
-						<p><span id="g-selec-remaining-4">10</span> remaining</p>
-					</div>
-                    <div class="l-edit">
-                    <a href="">Edit</a>
+				   <div class="deets">
+                    <span class="wdate">September 20, 2016</span>
+                    <span class="loc">Brooklyn, NY</span>
                     </div>
 					
-		                        <br clear="all">                      
+		                        <br clear="all">  </a>                    
 				</li>
                             
                             </ul>
-                              <div class="edit"><span class="mhide">Add</span> <a href="/cause_useraccount_items_add.html"><span class="plus">+</span></a></div>  
-                              
                             
                               
-                              
-                              
-                              
-                              
-                              <div class="col-md-12 text-center">
-                      <div class="line"></div>
-                                  
-                             <label class="" for="sample">Sample Registries</label>
-                             <label class="selec sample">
-                             <select id="sample" class="form-control" name="sample">
-                            <option value="1">African Safari</option>
-							<option value="2">Paris Art Tour</option>
-							<option value="3">London Express</option>
-							<option value="4">Hawaiian Retreat</option>
-                             </select> 
-                             </label>
-                           
-                             
-                             
-                             
                             
-                             
-                             </div>
-                              
+          
                               <div class="clearfix"></div>
                               
                                                         
-                            </div>
+                            </div> <!-- end section box --> 
+                            
                           <div class="col-md-12">  
                        <div class="form-group row text-center">
  
          
-          <button type="submit" class="submit button button-block">Save</button>
+         <a href="#" class="more"><div class="more-plus">+</div><br>
+         See More</a> 
           </div>
                             
                               </form>
